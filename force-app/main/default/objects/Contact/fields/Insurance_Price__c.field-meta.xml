@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Insurance_Price__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(1, 
+IF(ISPICKVAL(Number_of_Insurance_days__c, &quot;90&quot;), 1, 0), 90*4, 
+IF(ISPICKVAL(Number_of_Insurance_days__c, &quot;180&quot;), 1, 0), 180*4,
+IF(ISPICKVAL(Number_of_Insurance_days__c, &quot;360&quot;), 1, 0), 360*3,
+0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Insurance Price</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

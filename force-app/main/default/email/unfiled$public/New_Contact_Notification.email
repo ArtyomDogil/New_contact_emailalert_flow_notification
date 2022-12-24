@@ -1,0 +1,8 @@
+Hi
+{!Contact.FirstName} {!Contact.LastName}
+
+Thank you for choosing our service for calculating the cost of insurance.
+
+The price of your insurance will be {!Contact.Insurance_Price__c}$.
+
+King Regards
